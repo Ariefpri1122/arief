@@ -5,14 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Client;
 use App\Room;
+use Carbon\Carbon;
 
 class RoomsController extends Controller
 {
     //
     public function checkAvailableRooms($client_id, Request $request)
     {
-        $dateFrom = $request->input('dateFrom');
-        $dateTo = $request->input('dateTo');
+        $dateFrom = Carbon::parse($request->input('dateFrom'));
+        $dateTo = Carbon::parse($request->input('dateTo'));
         $client = new Client();
         $room = new Room();
 

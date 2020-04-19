@@ -43,5 +43,4 @@ class Room extends Model
         return $available_rooms;
 
     }
-
 }

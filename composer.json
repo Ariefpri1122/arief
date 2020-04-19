@@ -12,7 +12,10 @@
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
+        "kylekatarnls/laravel-carbon-2": "^1.0.0",
+        "nesbot/carbon": "2.0.0-beta.2 as 1.25.0",
         "phpunit/phpunit": "~5.7"
+        
     },
     "autoload": {
         "classmap": [
@@ -48,4 +51,5 @@
         "sort-packages": true,
         "optimize-autoloader": true
     }
+
 }
